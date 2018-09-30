@@ -1,0 +1,8 @@
+Trabalho Auditoria de Sistemas (1.5)
+Entrega: P1 (Impresso)
+Ferramentas Generalistas de Auditoria:
+    - ACL
+    - IDEA
+    - Audimation
+    - Galileo
+    - Pentana
