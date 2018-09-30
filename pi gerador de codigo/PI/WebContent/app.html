@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="app.css"> </head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    
+     <form action="config1" method="post">
+      <button type="submit" name="button" value="buttonx" class="config rd1"><span>Clear </span></button>
+      
+    </form>
+    <br> 
+    <form action="config1" method="post">
+      <button type="submit" name="button" value="button1" class="config"><span>Packge </span></button>
+      <button type="submit" name="button" value="button2" class="config"><span>Classe </span></button>
+      <button type="submit" name="button" value="button3" class="config"><span>Variável </span></button>
+      <button type="submit" name="button" value="button4" class="config"><span>Conexão BD</span></button>
+    </form>
+    <br>
+    <form action="${pageContext.request.contextPath}/input1" method="post">
+      <button type="submit" name="button1" value="button5" class="config input"><span>In Console </span></button>
+      <button type="submit" name="button2" value="button6" class="config input"><span>In TextField</span></button>
+      <button type="submit" name="button3" value="button7" class="config input"><span>In Button</span></button>
+      <button type="submit" name="button4" value="button8" class="config input"><span>In Select/BD</span></button>
+    </form>
+    <br>
+    <form action="${pageContext.request.contextPath}/process1" method="post">
+      <button type="submit" name="button1" value="button9" class="config process"><span>Conversão/Var </span></button>
+      <button type="submit" name="button2" value="button10" class="config process"><span>Try/Catch </span></button>
+      <button type="submit" name="button3" value="button11" class="config process"><span>While </span></button>
+      <button type="submit" name="button4" value="button12" class="config process"><span>For </span></button>
+      <button type="submit" name="button5" value="button13" class="config process"><span>If/Else </span></button>
+      <button type="submit" name="button6" value="button14" class="config process"><span>Switch/Case </span></button>
+    </form>
+    <br>
+    <form action="${pageContext.request.contextPath}/output1" method="post">
+      <button type="submit" name="button1" value="button15" class="config output"><span>Out Console </span></button>
+      <button type="submit" name="button2" value="button16" class="config output"><span>Out File </span></button>
+      <button type="submit" name="button3" value="button17" class="config output"><span>Out Update/BD</span></button>
+      <button type="submit" name="button4" value="button18" class="config output"><span>Out Inser/BD</span></button>
+    </form>
+  </div>
+  <div id="main">
+    <h2 class="text-center">Vamos começar, clique no botão abaixo para revelar os recursos</h2> 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Recursos</span>
+     </div>
+  <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+  </script>
+</body>
+
+</html>
